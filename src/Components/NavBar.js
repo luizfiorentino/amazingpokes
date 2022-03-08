@@ -1,16 +1,23 @@
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 export default function NavBar() {
   return (
     <div>
       <ul>
         <li>
           {" "}
-          <Link to="/">Home Page</Link>
+          <NavLink className="navItem" font-weight="bold" to="/">
+            Home Page
+          </NavLink>
         </li>
         <li>
-          <Link to="/discover">Discovery Page</Link>{" "}
+          <NavLink className="navItem" to="/discover">
+            Discovery Page
+          </NavLink>{" "}
         </li>
-        <Link to="/about">About</Link>
+        <NavLink className="navItem" to="/about">
+          About
+        </NavLink>
       </ul>
     </div>
   );
